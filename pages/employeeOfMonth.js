@@ -1,4 +1,4 @@
-import { api } from '../services/api';
+import { employeesApi } from '../services/api';
 
 import styles from '../styles/EOM.module.css';
 import { Toolbar } from '../components/toolbar';
@@ -26,8 +26,8 @@ export const EmployeeOfMonth = ({ employees }) => {
 
 //asynchronous function
 export const getServerSideProps = async () => {
-	// gat api data
-	const { data } = await api.get('employee');
+	// get api data
+	const { data } = await employeesApi.get('employee');
 
 	const employees = data.map((employee) => {
 		return {

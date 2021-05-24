@@ -1,0 +1,22 @@
+.main {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.post {
+	width: 500px;
+	margin-bottom: 1.5rem;
+	padding-bottom: 1.5rem;
+	border-bottom: 1px solid #000;
+	cursor: pointer;
+}
+
+.post img {
+	width: 100%;
+}
+
+.post h1 {
+	font-size: 1rem;
+	text-align: center;
+}
