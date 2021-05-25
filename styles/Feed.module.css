@@ -20,3 +20,22 @@
 	font-size: 1rem;
 	text-align: center;
 }
+
+.paginator {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.paginator div {
+	margin: 1.5rem;
+}
+
+.paginator .active {
+	cursor: pointer;
+}
+
+.paginator .disabled {
+	cursor: not-allowed;
+	color: #b3b3b3;
+}
